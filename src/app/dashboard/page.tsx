@@ -82,8 +82,8 @@ export default function Home() {
                 </tr>
               </thead>
               <tbody>
-                {collections.reverse().map(c => {
-                  return <Collection address={c}/>
+                {collections.reverse().map((c,i) => {
+                  return <Collection key={i} address={c}/>
                 })}
               </tbody>
             </table>

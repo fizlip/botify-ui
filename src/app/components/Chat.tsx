@@ -76,7 +76,7 @@ const Chat: React.FC<Props> = ({imageUrl, botAddress}) => {
                 {systemResponses.slice(1).map((e,i) => {
                     if(i % 2 != 0){
                         return (
-                        <div className="grid grid-cols-12 gap-5 mt-5">
+                        <div key={i} className="grid grid-cols-12 gap-5 mt-5">
                             <div className="col-span-1">
                                 <img className="rounded w-[100px]" src={imageUrl}/>
                             </div>
@@ -88,7 +88,7 @@ const Chat: React.FC<Props> = ({imageUrl, botAddress}) => {
                     }
                     else {
                         return (
-                        <div className="grid grid-cols-12 gap-5 mt-5">
+                        <div key={i} className="grid grid-cols-12 gap-5 mt-5">
                             <div className="text-right col-start-5 col-span-7">
                                 <p>{e}</p>
                             </div>

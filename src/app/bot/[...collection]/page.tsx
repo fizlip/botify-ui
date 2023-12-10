@@ -230,9 +230,9 @@ export default function Home() {
                     <div><p>Embed using: http://localhost:3000/bot/{tokenAccount}</p></div>
                     <div><p>Example: </p></div>
                     <p className='font-mono bg-neutral-900 p-2 border border-neutral-800 mt-5'>
-                        curl "http://localhost:3000/api/hello?account=0xC5B543A99dD40A58d295Ab15aE7fEc5840F53635" \<br/>
-                        <span className='ml-10'></span>-H <span className='text-green-400'>'Args: ["5"]'</span> \<br />
-                        <span className='ml-10'></span>-H <span className='text-green-400'>'Authorization: Basic YOUR_PRIVATE_KEY'</span>
+                        curl http://localhost:3000/api/hello?account=0xC5B543A99dD40A58d295Ab15aE7fEc5840F53635 \<br/>
+                        <span className='ml-10'></span>-H <span className='text-green-400'>Args: [ARGS]</span> \<br />
+                        <span className='ml-10'></span>-H <span className='text-green-400'>Authorization: Basic YOUR_PRIVATE_KEY</span>
                     </p>
                 </div>
                 <div className='mt-[10%] flex font-mono pb-10'>

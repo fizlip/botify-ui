@@ -80,7 +80,7 @@ export default function Home({ params }: { params: { slug: string } }) {
           </div>
           <div className='grid grid-cols-3 gap-10'>
             {parseInt(totalSupply) > 0 ? Array.from(Array(parseInt(totalSupply)).keys()).map(id => {
-              return <BotDescription tokenId={id} collectionAddress={pathname?.split("/")[3] as `0x${string}`}/>
+              return <BotDescription key={id} tokenId={id} collectionAddress={pathname?.split("/")[3] as `0x${string}`}/>
             }): <></>}
           </div>
         </div>

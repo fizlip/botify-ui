@@ -37,8 +37,8 @@ export default function Home() {
             </div>
           </div>
           <div className='grid grid-cols-3 gap-10'>
-            {cards.map(card => {
-              return <BotCard tokenId={card.tokenId} collectionAddress={card.collectionAddress as `0x${string}`}/>
+            {cards.map((card,i) => {
+              return <BotCard key={i} tokenId={card.tokenId} collectionAddress={card.collectionAddress as `0x${string}`}/>
             })}
           </div>
         </div>

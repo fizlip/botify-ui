@@ -158,7 +158,7 @@ export default function Home() {
             </div>
           </div>
           <div className='mt-[100%]'>
-            <p>"I'm in the arena trying stuff. Some will work, some won't. But always learning."  -- Chamath Palihapitiya</p>
+            <p>Im in the arena trying stuff. Some will work, some wont. But always learning.  -- Chamath Palihapitiya</p>
           </div>
         </div>
       </div>

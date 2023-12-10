@@ -8,9 +8,9 @@ interface Props {
 const LinkBanner:React.FC<Props> = ({links}) => {
   return (
       <div className='grid grid-cols-7'>
-          {links.map(l => {
+          {links.map((l, i) => {
                 return (
-                    <Link href="/bots" className='group flex flex-col hover:border border-neutral-700 rounded-md p-2 cursor:pointer'>
+                    <Link key={i} href="/bots" className='group flex flex-col hover:border border-neutral-700 rounded-md p-2 cursor:pointer'>
                         <div className='h-[100%] group:hover:h-[200%]'>
                         <Image 
                             src={l[1]}
