@@ -32,10 +32,13 @@ own Botify UI forks, kind of like Uniswap.
 be a concept many will understand.
 
 ## Try it out 
+If the vercel link does not work you will need to run the UI locally.
 
-## Using a Bot
-
-## Deploying a Bot
+```
+git clone https://github.com/iaincollins/nextjs-starter.git
+npm install
+npm run dev
+```
 
 ## Licence
 Distributed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International license. See License for more information.
