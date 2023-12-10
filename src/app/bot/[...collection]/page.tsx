@@ -197,7 +197,7 @@ export default function Home() {
                         <div>
                             <p className='font-bold'>CONSUME</p>
                             {args.map((e,i) => {
-                                return(<input onChange={(e) => {let p = [...args]; p[i] = e.target.value; setArgs(p)}} placeholder={`arg_${i}`} type="text" className='w-[100%] bg-neutral-900 border border-neutral-500 p-2' />)
+                                return(<input key={i} onChange={(e) => {let p = [...args]; p[i] = e.target.value; setArgs(p)}} placeholder={`arg_${i}`} type="text" className='w-[100%] bg-neutral-900 border border-neutral-500 p-2' />)
                             })}
                             <div>
                                 <button className='w-[50%] border text-neutral-500 border-neutral-500 hover:border-white hover:text-white' onClick={() => setArgs(p => [...p, ""])}>+ argument</button>
